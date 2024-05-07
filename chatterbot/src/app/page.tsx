@@ -9,14 +9,8 @@ export default function Home() {
       content: "Yo, this is ChatterBot! How can I help you today?",
     },
   ]);
-
-const [messages, setMessages] = useState([
-    {
-      role: "assistant",
-      content: "Yo, this is ChatterBot! How can I help you today?",
-    },
-  ]);
-  <div className=" h-full flex flex-col gap-2 overflow-y-auto py-8 px-3 w-full">
+ 
+	<div className=" h-full flex flex-col gap-2 overflow-y-auto py-8 px-3 w-full">
   {messages.map((e) => {
     return (
       <div
@@ -34,7 +28,7 @@ const [messages, setMessages] = useState([
 
 
 
-  {isLoading ? <div className="self-start  bg-gray-200 text-gray-800 w-max max-w-[18rem] rounded-md px-4 py-3 h-min">*thinking*</div> : ""}
+ <div className="self-start  bg-gray-200 text-gray-800 w-max max-w-[18rem] rounded-md px-4 py-3 h-min">*thinking*</div> : ""}
 </div>
 const callGetResponse = async () => {
     setIsLoading(true);
